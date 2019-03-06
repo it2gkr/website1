@@ -1,0 +1,81 @@
+{% extends 'wrapper.html' %}
+{% load static %}
+
+{% block mainCarousel %}
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Слайды карусели -->
+	<div class="carousel-inner">
+		<!-- Слайд 1 -->
+		<div class="item active">
+			{# <img src="{% static '/media/background_image.jpg' %}" alt="Los Angeles"> #}
+			<h2>ПРИВЕТ1</h2>
+			<p>Дополнительная информация слайда 1</p>
+			<button class="btn btn-primary btn-lg">Какая-то кнопка</button>
+		</div>
+		<!-- Слайд 2 -->
+		<div class="item">
+			{# <img src="{% static '/media/background_image.jpg' %}" alt="Los Angeles"> #}
+			<h2>ПРИВЕТ2</h2>
+			<p>Дополнительная информация слайда 1</p>
+			<button class="btn btn-primary btn-lg">Какая-то кнопка</button>
+		</div>
+		<!-- Слайд 3 -->
+		<div class="item">
+			{# <img src="{% static '/media/background_image.jpg' %}" alt="Los Angeles"> #}
+			<h2>ПРИВЕТ3</h2>
+			<p>Дополнительная информация слайда 1</p>
+			<button class="btn btn-primary btn-lg">Какая-то кнопка</button>
+		</div>
+	</div>
+
+	<!-- Навигация карусели (следующий или предыдущий слайд) -->
+	<!-- Кнопка, переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<!-- Кнопка, переход на следующий слайд с помощью атрибута data-slide="next" -->
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+
+{% endblock mainCarousel %}
+<!-- About Us -->
+
+
+<!-- Our places -->
+{% block ourShops %}
+<div class="ourShops">
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="shop">
+						SHOP 1
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="shop">
+						SHOP 2
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="shop">
+						SHOP 3
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="shop">
+						SHOP 4
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock ourShops %}
+
+<!-- Services -->
+
+
