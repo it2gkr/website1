@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <link rel="shortcut icon" type="image/png" href="{% static '/media/favicon.ico' %}"/>
+	<title>LANDINGPAGE</title>
+
+    <link rel="stylesheet" type="text/css" mdeia="screen" href="{% static "main.css" %}">
+
+	<!-- BOOTSTRAP -->
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- NAVBAR -->
+{% include 'nav-bar.html' %}
+
+<!-- FIRST BLOCK CAROUSEL -->
+{% block mainCarousel %}
+{% endblock mainCarousel %}
+
+<!-- SECOND BLOCK CAROUSEL -->
+{% block aboutUs %}
+{% endblock aboutUs %}
+
+<!-- THIRD BLOCK CAROUSEL -->
+{% block ourShops %}
+{% endblock ourShops %}
+
+<!-- FOOTER -->
+{% include 'footer.html' %}
+	
+</body>
+</html>
